@@ -351,3 +351,24 @@ function updateVisibility() {
 checkboxes.forEach(c => c.addEventListener("change", updateVisibility));
 renderMenus();
 updateVisibility();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("toggleRight");
+  const rightPanel = document.querySelector(".right");
+  const body = document.body;
+
+  rightPanel.classList.remove("active");
+  toggle.checked = false;
+  body.classList.add("right-closed");
+
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      rightPanel.classList.add("active");
+      body.classList.remove("right-closed");
+    } else {
+      rightPanel.classList.remove("active");
+      body.classList.add("right-closed");
+    }
+  });
+});
+

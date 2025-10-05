@@ -37,18 +37,66 @@ body {
 }
 
 .top {
-  text-align: right;
-  padding: 1.5rem .5rem .5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem .5rem 2rem;
   border-bottom: .5px solid var(--border);
 }
 
-.top h1 {
-  text-align: left;
+.header-left h1 {
   margin: 0;
   font-size: 2rem;
   color: var(--accent-soft);
 }
 
+.header-left p {
+  margin-top: 0.5rem;
+  color: var(--subtle);
+  font-size: 0.95rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #444;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--accent);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -63,20 +111,32 @@ body {
   padding: 2rem;
   overflow-y: scroll;
   height: calc(100vh - 160px);
+  transition: width 0.4s ease;
 }
 
 .right {
-  width: 60%;
   position: fixed;
-  right: 0;
   top: 160px;
+  right: -60%; 
+  width: 60%;
   height: calc(100vh - 160px);
   background: var(--bg);
+  border-left: 1px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
-  border-left: 1px solid var(--border);
+  transition: right 0.4s ease;
+  z-index: 5;
+}
+
+.right.active {
+  right: 0; 
+}
+
+body.right-closed .left {
+  width: 100%;
+  border-right: none;
 }
 
 .placeholder {
@@ -246,49 +306,4 @@ body {
 
 .fade-out {
     opacity: 0;
-}
-
-@media (max-width: 768px) {
-  .container {
-    display: block;
-    height: auto;
-  }
-
-  .left {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    padding: 1rem;
-    overflow-y: visible;
-  }
-
-  .right {
-    display: none !important; /* 🔥 Force-hide the right section */
-    position: static !important;
-    width: 0 !important;
-    height: 0 !important;
-    border: none !important;
-  }
-
-  .footer {
-    position: relative;
-    bottom: auto;
-    padding: 1rem 0;
-    text-align: center;
-    background: transparent;
-  }
-
-  .top {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .top h1,
-  .top p {
-    text-align: center;
-  }
-
-  .toggle-panel {
-    justify-content: center;
-  }
 }
