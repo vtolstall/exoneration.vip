@@ -3,7 +3,7 @@ const countdownEl = document.getElementById("countdown");
 const button = document.getElementById("manualRedirect");
 
 // Change this to your redirect destination:
-const redirectUrl = "https://exoneration.vip";
+const redirectUrl = "https://discord.gg/ZuY27P63gB";
 
 const interval = setInterval(() => {
   seconds--;

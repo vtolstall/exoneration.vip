@@ -54,20 +54,6 @@ a:active {
     color: #ff4081;
 }
 
-button {
-  background: #222;
-  color: #fff;
-  border: 1px solid #555;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-button:hover {
-  background: #444;
-}
-
 .fade {
   opacity: 1;
   animation: fadeIn 0.6s ease-in-out;
