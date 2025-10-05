@@ -34,24 +34,24 @@ const menus = {
     { name: "refill your current streaks or give yourself close to any streak", tags: [] },
     { name: "set radar to sweeping, constant or off", tags: [] },
     { name: "toggle godmode", tags: [] },
-    { name: "toggle noclip", tags: ["vip"] },
+    { name: "toggle noclip", tags: ["membership"] },
 
     { name: "spawnables", submenu: [
-      { name: "spawn a fake bounce on yourself", tags: ["vip"]  },
-      { name: "delete bounce", tags: ["vip"]  },
-      { name: "spawn care package on yourself", tags: ["vip"]  },
-      { name: "spawn care package to crosshairs", tags: ["vip"]  },
-      { name: "spawn care package elevator on yourself", tags: ["vip"]  },
-      { name: "spawn care package elevator to crosshairs", tags: ["vip"]  },
-      { name: "spawn care package stall on yourself", tags: ["vip"]  },
-      { name: "spawn care package stall to crosshairs", tags: ["vip"]  },
-      { name: "delete all exsisting care packages", tags: ["vip"]  },
-      { name: "force spawn riot-shield on yourself", tags: ["vip"]  },
-      { name: "spawn invisible platform", tags: ["vip"], conditional: { plutonium: "platform does not work with no barriers!" }  },
-      { name: "toggle platform corners", tags: ["vip"]},
-      { name: "delete any exsisting platform", tags: ["vip"]},
+      { name: "spawn a fake bounce on yourself", tags: ["membership"]  },
+      { name: "delete bounce", tags: ["membership"]  },
+      { name: "spawn care package on yourself", tags: ["membership"]  },
+      { name: "spawn care package to crosshairs", tags: ["membership"]  },
+      { name: "spawn care package elevator on yourself", tags: ["membership"]  },
+      { name: "spawn care package elevator to crosshairs", tags: ["membership"]  },
+      { name: "spawn care package stall on yourself", tags: ["membership"]  },
+      { name: "spawn care package stall to crosshairs", tags: ["membership"]  },
+      { name: "delete all exsisting care packages", tags: ["membership"]  },
+      { name: "force spawn riot-shield on yourself", tags: ["membership"]  },
+      { name: "spawn invisible platform", tags: ["membership"], conditional: { plutonium: "platform does not work with no barriers!" }  },
+      { name: "toggle platform corners", tags: ["membership"]},
+      { name: "delete any exsisting platform", tags: ["membership"]},
   ], 
-  tags: ["vip"] },
+  tags: ["membership"] },
 
     { name: "afterhits", submenu: [
       { name: "toggle empty clip on game end on/off, as well as changeable delay", tags: []  },
@@ -79,8 +79,8 @@ const menus = {
     { name: "toggle infinite canswap for all weapons on/off", tags: [] },
     { name: "set auto canswap anim for current weapon or all weapons", tags: ["plutonium"] },
     { name: "auto canswap current weapon or current weapon category", tags: [] },
-    { name: "toggle the instapumps feature on/off", tags: ["vip"] },
-    { name: "toggle the always mala swap feature on/off", tags: ["vip"] },
+    { name: "toggle the instapumps feature on/off", tags: ["membership"] },
+    { name: "toggle the always mala swap feature on/off", tags: ["membership"] },
     { name: "toggle permanent alt swap on/of", tags: [] },
     { name: "give yourself a quick mala swap", tags: [] }
   ],
@@ -92,25 +92,25 @@ const menus = {
     { name: "slider of aimbot range, with a interval changer below", tags: [] },
     
     { name: "hitmarker menu", submenu: [
-        { name: "toggle hitmarker aimbot on/off", tags: ["vip"] },
-        { name: "set hitmarker aimbot weapon, current weapon or all weapons", tags: ["vip"] },
-        { name: "set 2nd hitmarker aimbot weapon, current weapon or weapon category", tags: ["vip"] },
-        { name: "set the hitmarker aimbot range to everywhere, or the range slider", tags: ["vip"] },
-        { name: "slider of hitmarker aimbot range, with a interval changer below", tags: ["vip"] }        
+        { name: "toggle hitmarker aimbot on/off", tags: ["membership"] },
+        { name: "set hitmarker aimbot weapon, current weapon or all weapons", tags: ["membership"] },
+        { name: "set 2nd hitmarker aimbot weapon, current weapon or weapon category", tags: ["membership"] },
+        { name: "set the hitmarker aimbot range to everywhere, or the range slider", tags: ["membership"] },
+        { name: "slider of hitmarker aimbot range, with a interval changer below", tags: ["membership"] }        
     ],
-    tags: ["vip"] },
+    tags: ["membership"] },
   ],
   "binds": [
     { name: "class change bind, with class selection, and actions on class change", tags: [] },
-    { name: "bolt movement, with movement reccorder and qol editing options", tags: ["vip"] },
-    { name: "velocity, with track velocity and qol editing options", tags: ["vip"] },
-    { name: "bot bolt movement & options, bot veloctiy & options, & more bot actions", tags: ["vip"] },
-    { name: "animation repeater bind", tags: ["vip"] },
-    { name: "gun flicker bind", tags: ["vip"] },
-    { name: "flash bind", tags: ["vip"] },
-    { name: "blackscreen bind", tags: ["vip"] },
-    { name: "stun bind", tags: ["vip"] },
-    { name: "damage bind", tags: ["vip"] },
+    { name: "bolt movement, with movement reccorder and qol editing options", tags: ["membership"] },
+    { name: "velocity, with track velocity and qol editing options", tags: ["membership"] },
+    { name: "bot bolt movement & options, bot veloctiy & options, & more bot actions", tags: ["membership"] },
+    { name: "animation repeater bind", tags: ["membership"] },
+    { name: "gun flicker bind", tags: ["membership"] },
+    { name: "flash bind", tags: ["membership"] },
+    { name: "blackscreen bind", tags: ["membership"] },
+    { name: "stun bind", tags: ["membership"] },
+    { name: "damage bind", tags: ["membership"] },
     { name: "fake nac bind", tags: [] },
     { name: "illusion bind", tags: [] },
     { name: "vish bind", tags: [] },
@@ -147,12 +147,12 @@ const menus = {
     { name: "reset name", tags: ["plutonium"] }
   ],
   "on spawn load": [
-    { name: "load ammo and spawn load, with up to 3 weapons ammo settings", tags: ["vip"] },
-    { name: "refresh alt-swap with spefific weapon", tags: ["vip"] },
-    { name: "spawn care package at set coords", tags: ["vip"] },
-    { name: "spawn care package stall at set coords", tags: ["vip"] },
-    { name: "spawn care package elevator at set coords", tags: ["vip"] },    
-    { name: "spawn pickupable canswap at set coords", tags: ["vip"] }
+    { name: "load ammo and spawn load, with up to 3 weapons ammo settings", tags: ["membership"] },
+    { name: "refresh alt-swap with spefific weapon", tags: ["membership"] },
+    { name: "spawn care package at set coords", tags: ["membership"] },
+    { name: "spawn care package stall at set coords", tags: ["membership"] },
+    { name: "spawn care package elevator at set coords", tags: ["membership"] },    
+    { name: "spawn pickupable canswap at set coords", tags: ["membership"] }
   ],
   "lobby": [
     { name: "set the score of both teams for the rest of the game", tags: [] },
@@ -194,10 +194,10 @@ const menus = {
     { name: "kick the player", tags: [] },
   ],
   "clip cutting": [
-    { name: "toggle weapon greenscreens on/off", tags: ["vip", "solo"] },
-    { name: "switch the greenscreens color between green, red, blue, pink, yellow", tags: ["vip", "solo"] },
-    { name: "toggle invisible weapon on/off", tags: ["vip", "solo"] },
-    { name: "toggle in game hud on/off", tags: ["vip", "solo"] }
+    { name: "toggle weapon greenscreens on/off", tags: ["membership", "solo"] },
+    { name: "switch the greenscreens color between green, red, blue, pink, yellow", tags: ["membership", "solo"] },
+    { name: "toggle invisible weapon on/off", tags: ["membership", "solo"] },
+    { name: "toggle in game hud on/off", tags: ["membership", "solo"] }
   ]
 };
 
@@ -213,7 +213,7 @@ function getActiveToggles() {
 const tagColors = {
   solo: "#ff8ace",
   plutonium: "#93c4ff",
-  vip: "#ffdc96"
+  membership: "#ffdc96"
 };
 
 function makeTagPrefix(tags) {
@@ -288,7 +288,7 @@ function renderItems(items, depth = 0, inheritedTags = []) {
 
       if (itemTags.includes("solo")) feature.classList.add("solo");
       if (itemTags.includes("plutonium")) feature.classList.add("plutonium");
-      if (itemTags.includes("vip")) feature.classList.add("vip");
+      if (itemTags.includes("membership")) feature.classList.add("membership");
 
       const prefix = makeTagPrefix(itemTags);
       feature.innerHTML = `${prefix ? prefix + " " : ""}${item.name}`;
