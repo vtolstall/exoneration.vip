@@ -247,3 +247,45 @@ body {
 .fade-out {
     opacity: 0;
 }
+
+/* =========================================
+   MOBILE VIEW - Hide right panel on phones
+   ========================================= */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .right {
+    display: none; /* hide right side entirely */
+  }
+
+  .footer {
+    position: relative; /* stop overlapping content */
+    bottom: auto;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .top {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .top h1,
+  .top p {
+    text-align: center;
+  }
+
+  .toggle-panel {
+    justify-content: center;
+  }
+}
