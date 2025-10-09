@@ -62,8 +62,8 @@ const menus = {
     ],
     },
 
-    { name: "save position as well as chnageable bind", tags: [] },
-    { name: "load position as well as chnageable bind", tags: [] }
+    { name: "save position as well as changeable bind", tags: [] },
+    { name: "load position as well as changeable bind", tags: [] }
   ],
   "weapons": [
     { name: "set camo slider with every camo named, aswell as  random, none, & disco camo", tags: [] },
