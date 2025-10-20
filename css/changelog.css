@@ -1,0 +1,118 @@
+    body {
+        background-color: #0d0d0d;
+        color: #e0e0e0;
+        font-family: 'Poppins', Arial, sans-serif;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .version {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-left: 3px solid #e94eff;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+    }
+
+    .version h2 {
+      color: #e94eff;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .version time {
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: ">";
+      color: #e94eff;
+      margin-right: 8px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 250px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #444;
+        opacity: 0.7;
+        letter-spacing: 0.5px;
+        transition: opacity 0.5s ease, filter 0.5s ease;
+        user-select: none;
+    }
+
+    footer p {
+        margin: 0;
+        display: inline-block;
+        filter: blur(0);
+        opacity: 1;
+        transition: opacity 0.6s ease, filter 0.6s ease;
+    }
+
+    footer.fade-out {
+        opacity: 0;
+        filter: blur(4px);
+    }
+
+    footer.fade-in {
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    .return {
+    margin-right: 15px; 
+    }
+
+    .fade {
+    opacity: 1;
+    animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+
+    .fade-in {
+        opacity: 1;
+    }
+
+    .fade-out {
+        opacity: 0;
+    }
+
+    a {
+      color: #e94eff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
